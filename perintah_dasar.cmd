@@ -1,121 +1,158 @@
-rem Belajar Batch File
-rem dibuat oleh: Rofi
-
-rem perintah-perintah dasar yang ada di Batch File
-
-rem 1. @echo off
-rem    Perintah ini berfungsi untuk menonaktifkan tampilan 
-rem    perintah-perintah dalam skrip (mencegah perintah 
-rem    tampil dilayar, hanya output yang ditampilkan).
-
 @echo off
-
-rem 2. echo
-rem    Perintah ini berfungsi untuk menampilkan teks atau
-rem    pesan di layar.
-
+:: Belajar Batch File
+:: dibuat oleh: Rofi
+::
+:: perintah-perintah dasar yang ada di Batch File
+::
+:: 1. @echo off
+::    Perintah ini berfungsi untuk menonaktifkan tampilan 
+::    perintah-perintah dalam skrip (mencegah perintah 
+::    tampil dilayar, hanya output yang ditampilkan).
+::
+:: Contohnya:
+::
+@echo off
+::
+:: 2. echo
+::    Perintah ini berfungsi untuk menampilkan teks atau
+::    pesan di layar.
+::
+:: Contohnya:
+::
 echo Belajar Batch File itu menyenangkan!
-
-rem 3. rem
-rem    Perintah ini berfungsi untuk menambahkan komentar
-rem    dalam skrip Batch.
-
-rem Ini adalah komentar
+::
+:: 3. rem
+::    Perintah ini berfungsi untuk menambahkan komentar
+::    dalam skrip Batch.
+::
+:: Contohnya:
+::
+:: Ini adalah komentar
 echo Ini adalah komentar
-
-rem 4. cls
-rem    Perintah ini berfungsi untuk membersihkan layar
-rem    Command Prompt (CMD).
-
+::
+:: 4. cls
+::    Perintah ini berfungsi untuk membersihkan layar
+::    Command Prompt (CMD).
+::
+:: Contohnya:
+::
 cls
-
-rem 5. set
-rem    Perintah ini berfungsi untuk mendeklarasikan variabel
-rem    dan memberikan nilai.
-
+::
+:: 5. set
+::    Perintah ini berfungsi untuk mendeklarasikan variabel
+::    dan memberikan nilai.
+::
+:: Contohnya:
+::
 set nama_lengkap=Rofi
 echo %nama_lengkap%
-
-rem 6. set /a
-rem    Perintah ini berfungsi untuk melakukan operasi aritmatika
-rem    pada variabel.
-
+::
+:: 6. set /a
+::    Perintah ini berfungsi untuk melakukan operasi aritmatika
+::    pada variabel.
+::
+:: Contohnya:
+::
 set /a angka_1=50
 set /a angka_2=50
 set /a jumlah=%angka_1% + %angka_2%
 echo Hasil  penjumlahan dari %angka_1% + %angka_1% adalah %jumlah%
-
-rem 7. set /p
-rem    Perintah ini berfungsi untuk meminta input dari pengguna
-rem    dan menyimpannya kedalam variabel.
-
+::
+:: 7. set /p
+::    Perintah ini berfungsi untuk meminta input dari pengguna
+::    dan menyimpannya kedalam variabel.
+::
+:: Contohnya:
+::
 set /p umur=Umur Anda berapa tahun:
 echo %umur%
-
-rem 8. cd
-rem    Perintah ini berfungsi untuk mengubah direktori kerja
-rem    saat ini.
-
-rem cd [NAMA_FOLDER]
-
-rem 9. dir
-rem    Perintah ini berfungsi untuk menampilkan daftar file 
-rem    dan folder didalam direktori.
-
+::
+:: 8. cd
+::    Perintah ini berfungsi untuk mengubah direktori kerja
+::    saat ini.
+::
+:: Contohnya:
+::
+:: cd [NAMA_FOLDER]
+::
+:: 9. dir
+::    Perintah ini berfungsi untuk menampilkan daftar file 
+::    dan folder didalam direktori.
+::
+:: Contohnya:
+::
 dir
-
-rem 10. goto
-rem     Perintah ini berfungsi untuk mengarahkan eksekusi ke
-rem     label tertentu dalam Batch File.
-
+::
+:: 10. goto
+::     Perintah ini berfungsi untuk mengarahkan eksekusi ke
+::     label tertentu dalam Batch File.
+::
+:: Contohnya:
+::
 goto Akhir
 :Akhir
 echo Program selesai.
-
-rem 11. call
-rem     Perintah ini berfungsi untuk memanggil file Batch lain
-rem     atau subroutine didalam Batch File.
-
-rem call [NAMA_SKRIP.cmd]
-
-rem 12. start
-rem     Perintah ini berfungsi untuk menjalankan program atau 
-rem     Batch File lain di jendela terpisah.
-
-rem start [NAMA_SKRIP.cmd]
-
-rem 13. del
-rem     Perintah ini berfungsi untuk menghapus file.
-
-rem del [NAMA_FILE]
-
-rem 14. copy
-rem     Perintah ini berfungsi untuk mmenyalin file.
-
-rem copy [NAMA_FILE[ [NAMA_FILE]
-
-rem 15. move
-rem     Perintah ini berfungsi untuk memindahkan file atau
-rem     folder.
-
-rem move [NAMA_FILE/FOLDER] [NAMA_FILE/FOLDER]
-
-rem 16. timeout
-rem    Perintah ini berfungsi untuk menunggu selama jumlah detik
-rem    yang ditentukan
-
+::
+:: 11. call
+::     Perintah ini berfungsi untuk memanggil file Batch lain
+::     atau subroutine didalam Batch File.
+::
+:: Contohnya:
+::
+:: call [NAMA_SKRIP.cmd]
+::
+:: 12. start
+::     Perintah ini berfungsi untuk menjalankan program atau 
+::     Batch File lain di jendela terpisah.
+::
+:: Contohnya:
+::
+:: start [NAMA_SKRIP.cmd]
+::
+:: 13. del
+::     Perintah ini berfungsi untuk menghapus file.
+::
+:: Contohnya:
+::
+:: del [NAMA_FILE]
+::
+:: 14. copy
+::     Perintah ini berfungsi untuk mmenyalin file.
+::
+:: Contohnya:
+::
+:: copy [NAMA_FILE[ [NAMA_FILE]
+::
+:: 15. move
+::     Perintah ini berfungsi untuk memindahkan file atau
+::     folder.
+::
+:: Contohnya:
+::
+:: move [NAMA_FILE/FOLDER] [NAMA_FILE/FOLDER]
+::
+:: 16. timeout
+::    Perintah ini berfungsi untuk menunggu selama jumlah detik
+::    yang ditentukan
+::
+:: Contohnya:
+::
 timeout /t 5
-
-rem 17. pause
-rem     Perintah ini berfungsi untuk menunggu input dari 
-rem     pengguna dan menampilkan pesan "Press any key to
-rem     continue" sebelum melanjutkan.
-
+::
+:: 17. pause
+::     Perintah ini berfungsi untuk menunggu input dari 
+::     pengguna dan menampilkan pesan "Press any key to
+::     continue" sebelum melanjutkan.
+::
+:: Contohnya:
+::
 pause
-
-rem 18. exit
-rem     Perintah ini berfungsi untuk menghentikan eksekusi
-rem     Batch File dan menutup Command Prompt (CMD) jika
-rem     Batch File dijalankan dari sana.
-
+::
+:: 18. exit
+::     Perintah ini berfungsi untuk menghentikan eksekusi
+::     Batch File dan menutup Command Prompt (CMD) jika
+::     Batch File dijalankan dari sana.
+::
+:: Contohnya:
+::
 exit
