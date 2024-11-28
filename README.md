@@ -1,1 +1,1 @@
-Repo catatan saya dalam belajar Batch File 🗿.
+Repo ini berisi catatan saya dalam belajar Batch File.
