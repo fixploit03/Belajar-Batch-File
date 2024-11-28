@@ -34,6 +34,7 @@ rem    Perintah ini berfungsi untuk mendeklarasikan variabel
 rem    dan memberikan nilai.
 
 set nama_lengkap=Rofi
+echo %nama_lengkap%
 
 rem 6. set /a
 rem    Perintah ini berfungsi untuk melakukan operasi aritmatika
@@ -44,35 +45,77 @@ set /a angka_2=50
 set /a jumlah=%angka_1% + %angka_2%
 echo Hasil  penjumlahan dari %angka_1% + %angka_1% adalah %jumlah%
 
-rem 7. if
-rem    Perintah ini berfungsi untuk mengevaluasi kondisi dan 
-rem    menjalankan perintah tergantung pada hasil evaluasi tersebut.
+rem 7. set /p
+rem    Perintah ini berfungsi untuk meminta input dari pengguna
+rem    dan menyimpannya kedalam variabel.
 
-set /a angka_3=150
-if %angka_3% gtr 100 (
-	echo Angka %angka_3% lebih besar dari angka 100
-)
+set /p umur=Umur Anda berapa tahun:
+echo %umur%
 
-rem 8. else
-rem    Perintah ini berfungsi untuk menyediakan blok perintah alternatif
-rem    jika kondisi pada if tidak terpenuhi.
+rem 8. cd
+rem    Perintah ini berfungsi untuk mengubah direktori kerja
+rem    saat ini.
 
-set /a angka_4=150
-if %angka_4% gtr 200 (
-	echo Angka %angka_4% lebih besar dari angka 150
-) else (
-	echo Angka %angka_4% tidak lebih besar dari angka 150
-)
+rem cd NAMA_FOLDER
 
-rem 9. timeout
+rem 9. dir
+rem    Perintah ini berfungsi untuk menampilkan daftar file 
+rem    dan folder didalam direktori.
+
+dir
+
+rem 10. goto
+rem     Perintah ini berfungsi untuk mengarahkan eksekusi ke
+rem     label tertentu dalam Batch File.
+
+goto Akhir
+:Akhir
+echo Program selesai.
+
+rem 11. call
+rem     Perintah ini berfungsi untuk memanggil file Batch lain
+rem     atau subroutine didalam Batch File.
+
+rem call skrip_tono.cmd
+
+rem 12. start
+rem     Perintah ini berfungsi untuk menjalankan program atau 
+rem     Batch File lain di jendela terpisah.
+
+rem start skrip_toni.cmd
+
+rem 13. del
+rem     Perintah ini berfungsi untuk menghapus file.
+
+rem del file_ga_penting.txt
+
+rem 14. copy
+rem     Perintah ini berfungsi untuk mmenyalin file.
+
+rem copy file_penting.txt file_penting_2.txt
+
+rem 15. move
+rem     Perintah ini berfungsi untuk memindahkan file atau
+rem     folder.
+
+rem move skrip_tini.cmd move contoh_skrip
+
+rem 16. timeout
 rem    Perintah ini berfungsi untuk menunggu selama jumlah detik
 rem    yang ditentukan
 
 timeout /t 5
 
-rem 10. pause
+rem 17. pause
 rem     Perintah ini berfungsi untuk menunggu input dari 
 rem     pengguna dan menampilkan pesan "Press any key to
 rem     continue" sebelum melanjutkan.
 
 pause
+
+rem 18. exit
+rem     Perintah ini berfungsi untuk menghentikan eksekusi
+rem     Batch File dan menutup Command Prompt (CMD) jika
+rem     Batch File dijalankan dari sana.
+
+exit
