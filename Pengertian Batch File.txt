@@ -11,5 +11,3 @@ mengotomatiskan tugas-tugas yang ada di sistem operasi Windows.
 Contoh nama file Batch:
 	- skrip_rofi.bat
 	- skrip_rofi.cmd
-	
-	
