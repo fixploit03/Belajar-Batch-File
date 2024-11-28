@@ -98,7 +98,7 @@ rem 15. move
 rem     Perintah ini berfungsi untuk memindahkan file atau
 rem     folder.
 
-rem move [NAMA_FILE/FOLDER] [move NAMA_FILE/FOLDER]
+rem move [NAMA_FILE/FOLDER] [NAMA_FILE/FOLDER]
 
 rem 16. timeout
 rem    Perintah ini berfungsi untuk menunggu selama jumlah detik
