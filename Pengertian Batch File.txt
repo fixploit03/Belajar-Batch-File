@@ -1,0 +1,15 @@
+Belajar Batch File
+dibuat oleh: Rofi
+
+Apa itu Batch File?
+
+Batch File adalah sebuah skrip yang berisi serangkaian perintah
+yang dapat dieksekusi oleh Command Prompt (CMD) di Windows.
+Skrip ini berakhiran .bat atau .cmd dan digunakan untuk
+mengotomatiskan tugas-tugas yang ada di sistem operasi Windows.
+
+Contoh nama file Batch:
+	- skrip_rofi.bat
+	- skrip_rofi.cmd
+	
+	
