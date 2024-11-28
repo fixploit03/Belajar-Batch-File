@@ -56,7 +56,7 @@ rem 8. cd
 rem    Perintah ini berfungsi untuk mengubah direktori kerja
 rem    saat ini.
 
-rem cd NAMA_FOLDER
+rem cd [NAMA_FOLDER]
 
 rem 9. dir
 rem    Perintah ini berfungsi untuk menampilkan daftar file 
@@ -76,29 +76,29 @@ rem 11. call
 rem     Perintah ini berfungsi untuk memanggil file Batch lain
 rem     atau subroutine didalam Batch File.
 
-rem call skrip_tono.cmd
+rem call [NAMA_SKRIP.cmd]
 
 rem 12. start
 rem     Perintah ini berfungsi untuk menjalankan program atau 
 rem     Batch File lain di jendela terpisah.
 
-rem start skrip_toni.cmd
+rem start [NAMA_SKRIP.cmd]
 
 rem 13. del
 rem     Perintah ini berfungsi untuk menghapus file.
 
-rem del file_ga_penting.txt
+rem del [NAMA_FILE]
 
 rem 14. copy
 rem     Perintah ini berfungsi untuk mmenyalin file.
 
-rem copy file_penting.txt file_penting_2.txt
+rem copy [NAMA_FILE[ [NAMA_FILE]
 
 rem 15. move
 rem     Perintah ini berfungsi untuk memindahkan file atau
 rem     folder.
 
-rem move skrip_tini.cmd move contoh_skrip
+rem move [NAMA_FILE/FOLDER] [move NAMA_FILE/FOLDER]
 
 rem 16. timeout
 rem    Perintah ini berfungsi untuk menunggu selama jumlah detik
