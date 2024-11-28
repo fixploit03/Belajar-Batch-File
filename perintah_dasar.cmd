@@ -5,7 +5,7 @@ rem perintah-perintah dasar yang ada di Batch File
 
 rem 1. @echo off
 rem    Perintah ini berfungsi untuk menonaktifkan tampilan 
-rem	   perintah-perintah dalam skrip (mencegah perintah 
+rem    perintah-perintah dalam skrip (mencegah perintah 
 rem    tampil dilayar, hanya output yang ditampilkan).
 
 @echo off
